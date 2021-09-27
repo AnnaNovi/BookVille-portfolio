@@ -1,0 +1,265 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BookVille</title><style> /*!*************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/pages/index/index.scss ***!
+  \*************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
+.inner {
+  max-width: 1440px;
+  padding: 0 120px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+  @media (max-width: 991px) {
+    .inner {
+      padding: 0 60px; } }
+  @media (max-width: 767px) {
+    .inner {
+      padding: 0 40px; } }
+  @media (max-width: 575px) {
+    .inner {
+      padding: 0 20px; } }
+  @media (max-width: 320px) {
+    .inner {
+      padding: 0 11px; } }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+*:focus {
+  outline: webkit focus ring color auto 0px !important; }
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  border: none;
+  background: transparent; }
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(assets/fonts/Montserrat-Regular.eot);
+  src: url(assets/fonts/Montserrat-Regular.woff) format("woff"), url(assets/fonts/Montserrat-Regular.ttf) format("truetype"), url(assets/fonts/Montserrat-Regular.otf) format("opentype"), url(assets/icons/Montserrat-Regular.svg) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.header__top-navigation {
+  align-items: flex-end;
+  padding: 12px 0 28px 0;
+  display: flex; }
+  @media (max-width: 767px) {
+    .header__top-navigation {
+      display: none; } }
+
+.header__top-navigation_mini {
+  display: none;
+  align-items: center;
+  padding: 12px 0 18px 0; }
+  @media (max-width: 767px) {
+    .header__top-navigation_mini {
+      display: flex; } }
+  .header__top-navigation_mini .header__icon_loupe {
+    margin-left: 26px; }
+
+.header__favorites_left {
+  display: flex;
+  align-items: center; }
+
+.phone-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center; }
+
+.phone {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #606060;
+  margin-left: 13px; }
+
+.header__icon {
+  fill: #887569;
+  width: 32px;
+  height: 32px; }
+  @media (max-width: 575px) {
+    .header__icon {
+      width: 21px;
+      height: 21px; } }
+  .header__icon.header__icon_loupe {
+    width: 28px;
+    height: 28px; }
+    @media (max-width: 575px) {
+      .header__icon.header__icon_loupe {
+        width: 18px;
+        height: 18px; } }
+
+.header__icon_mini {
+  fill: #887569;
+  width: 18px;
+  height: 18px; }
+
+.logo {
+  width: 155px;
+  height: 84px; }
+  @media (max-width: 575px) {
+    .logo {
+      width: 96px;
+      height: 52px; } }
+
+.header__favorites-item {
+  margin-right: 29px;
+  position: relative; }
+  .header__favorites-item:last-child {
+    margin-right: 0; }
+  .header__favorites-item::before {
+    width: 22px;
+    height: 22px;
+    background: #887569;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 10px;
+    text-align: center;
+    padding: 2px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 15px;
+    left: 17px; }
+
+.header__favorites-item_like::before {
+  content: "10"; }
+
+.header__favorites-item_cart::before {
+  content: "4"; }
+
+.header__divide-line {
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.header-burger {
+  display: none;
+  width: 21px;
+  height: 1.5px;
+  background: #887569;
+  cursor: pointer;
+  position: relative; }
+  .header-burger::before, .header-burger::after {
+    content: "";
+    width: 21px;
+    height: 1.5px;
+    background: #887569; }
+  .header-burger::before {
+    position: absolute;
+    left: 0;
+    top: -7px; }
+  .header-burger::after {
+    position: absolute;
+    left: 0;
+    bottom: -7px; }
+  @media (max-width: 1199px) {
+    .header-burger {
+      display: block; } }
+
+.header__navigation {
+  padding: 5px 0 34px 0;
+  display: flex; }
+  @media (max-width: 767px) {
+    .header__navigation {
+      display: none; } }
+
+.header__nav {
+  width: 80%;
+  display: flex; }
+  @media (max-width: 1199px) {
+    .header__nav {
+      display: none; } }
+
+.nav__burger {
+  cursor: pointer;
+  display: block;
+  width: 19px;
+  height: 2px;
+  background: #887569;
+  position: relative; }
+  .nav__burger::before, .nav__burger::after {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background: #887569; }
+  .nav__burger::before {
+    position: absolute;
+    left: 0;
+    top: -7px; }
+  .nav__burger::after {
+    position: absolute;
+    left: 0;
+    bottom: -7px; }
+
+.nav__link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4f4f4f; }
+
+.nav__link_color {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4f4f4f;
+  font-weight: 500;
+  color: #887569; }
+
+.header__icon_soc {
+  margin-left: 19px; }
+
+.header__icon_lang {
+  cursor: pointer;
+  fill: #887569;
+  width: 11px;
+  height: 11px;
+  margin-left: 11px; }
+
+.header__language {
+  margin-left: 35px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #787878; }
+
+footer {
+  background: #f5f5f5;
+  padding: 19px 0 33px 0; }
+
+@media (max-width: 1440px) {
+  .footer__navigation {
+    flex-direction: column; } }
+
+.footer__nav {
+  width: 60%; }
+  @media (max-width: 1440px) {
+    .footer__nav {
+      justify-content: space-around;
+      width: 100%;
+      margin: 25px 0; } }
+  @media (max-width: 767px) {
+    .footer__nav {
+      flex-direction: column; } }
+  @media (max-width: 767px) {
+    .footer__nav .nav__link {
+      margin-bottom: 13px; }
+      .footer__nav .nav__link:last-of-type {
+        margin-bottom: 0; } }
+
+</style></head><body> <body> <header class="header"> <div class="inner"><div class="header__top-navigation_mini flex"><div class="header__favorites header__favorites_left"><div class="header-burger"></div><button class="header__favorites-item"><svg class="header__icon header__icon_loupe"><use xlink:href="assets/icons/sprite.svg#loupe"></use></svg></button></div><a class="logo-block" href=""> <img class="logo" src="assets/images/logo.png" alt=""></a><div class="header__favorites"><a class="header__favorites-item header__favorites-item_like" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></a><a class="header__favorites-item header__favorites-item_cart" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg></a></div></div><div class="header__top-navigation flex"><div class="phone-number"><svg class="header__icon_mini"><use xlink:href="assets/icons/sprite.svg#phone"></use></svg><a class="phone" href="tel:+79991400000">+7 999 140 00 00</a></div><a class="logo-block" href=""> <img class="logo" src="assets/images/logo.png" alt=""></a><div class="header__favorites"><button class="header__favorites-item"><svg class="header__icon header__icon_loupe"><use xlink:href="assets/icons/sprite.svg#loupe"></use></svg></button><a class="header__favorites-item header__favorites-item_like" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></a><a class="header__favorites-item header__favorites-item_cart" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg></a></div></div><hr class="header__divide-line"><nav class="header__navigation flex"><div class="header-burger"></div><div class="header__nav nav flex"><div class="nav__burger"></div><a class="nav__link nav__link_color" href="">Подразделы</a><a class="nav__link" href="">О нас</a><a class="nav__link" href="">Мероприятия</a><a class="nav__link" href="">Скидки</a><a class="nav__link" href="">Блог</a><a class="nav__link" href="">Доставка и оплата</a><a class="nav__link" href="">Контакты</a></div><div class="header__socials flex"> <a href=""> <svg class="header__icon_mini header__icon_soc"><use xlink:href="assets/icons/sprite.svg#facebook"></use></svg></a><a href=""> <svg class="header__icon_mini header__icon_soc"><use xlink:href="assets/icons/sprite.svg#instagram"></use></svg></a><p class="header__language">RU<svg class="header__icon_lang"><use xlink:href="assets/icons/sprite.svg#arrow-down"></use></svg></p></div></nav></div></header><footer class="footer"><div class="inner"> <nav class="footer__navigation flex"><a class="logo-block" href=""> <img class="logo" src="assets/images/logo.png" alt=""></a><div class="footer__nav nav flex"><a class="nav__link" href="">О нас</a><a class="nav__link" href="">Мероприятия</a><a class="nav__link" href="">Скидки</a><a class="nav__link" href="">Блог</a><a class="nav__link" href="">Доставка и оплата</a><a class="nav__link" href="">Контакты</a></div><div class="phone-number"><svg class="header__icon_mini"><use xlink:href="assets/icons/sprite.svg#phone"></use></svg><a class="phone" href="tel:+79991400000">+7 999 140 00 00</a></div></nav></div></footer></body></body></html>
