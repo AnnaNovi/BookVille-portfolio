@@ -35,6 +35,11 @@ body {
   justify-content: space-between;
   align-items: center; }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
 *:focus {
   outline: webkit focus ring color auto 0px !important; }
 
@@ -63,6 +68,59 @@ a {
     .section-title {
       font-size: 18px;
       line-height: 22px; } }
+
+.pages-nav-line {
+  display: flex;
+  align-items: center; }
+
+.pages-nav-line__link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #a7a7a7;
+  transition: 0.3s; }
+  .pages-nav-line__link:hover {
+    color: #887569;
+    transition: 0.3s; }
+  @media (max-width: 575px) {
+    .pages-nav-line__link {
+      font-size: 14px;
+      line-height: 17px; } }
+
+.pages-nav-line__arrow {
+  width: 8px;
+  height: 8px;
+  margin: 0 20px;
+  transform: rotate(-90deg);
+  fill: #a7a7a7; }
+  @media (max-width: 767px) {
+    .pages-nav-line__arrow {
+      margin: 0 10px; } }
+
+.pages-title {
+  margin: 35px 0 23px 0;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 44px;
+  color: #373737; }
+  @media (max-width: 767px) {
+    .pages-title {
+      margin: 17px 0 20px 0; } }
+  @media (max-width: 575px) {
+    .pages-title {
+      font-size: 18px;
+      line-height: 22px; } }
+
+.pages-text__paragraph {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 158.4%;
+  color: #525252;
+  margin-bottom: 22px; }
+  @media (max-width: 575px) {
+    .pages-text__paragraph {
+      font-size: 14px;
+      line-height: 140%; } }
 
 .header__top-navigation {
   align-items: flex-end;
@@ -148,6 +206,10 @@ a {
     position: absolute;
     bottom: 20px;
     left: 17px; }
+    @media (max-width: 575px) {
+      .header__favorites-item::before {
+        bottom: 15px;
+        left: 12px; } }
 
 .header__favorites-item_like::before {
   content: "10"; }
@@ -889,8 +951,101 @@ footer {
       font-size: 14px;
       line-height: 17px; } }
 
-</style></head><body> <header class="header"> <div class="inner"><div class="header__top-navigation_mini flex"><div class="header__favorites header__favorites_left"><div class="header-burger"></div><button class="header__favorites-item"><svg class="header__icon header__icon_loupe"><use xlink:href="assets/icons/sprite.svg#loupe"></use></svg></button></div><a class="logo-block" href=""> <img class="logo" src="assets/images/logo.png" alt=""></a><div class="header__favorites"><a class="header__favorites-item header__favorites-item_like" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></a><a class="header__favorites-item header__favorites-item_cart" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg></a></div></div><div class="header__top-navigation flex"><div class="phone-number"><svg class="header__icon_mini"><use xlink:href="assets/icons/sprite.svg#phone"></use></svg><a class="phone" href="tel:+79991400000">+7 999 140 00 00</a></div><a class="logo-block" href=""> <img class="logo" src="assets/images/logo.png" alt=""></a><div class="header__favorites"><button class="header__favorites-item"><svg class="header__icon header__icon_loupe"><use xlink:href="assets/icons/sprite.svg#loupe"></use></svg></button><a class="header__favorites-item header__favorites-item_like" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></a><a class="header__favorites-item header__favorites-item_cart" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg></a></div></div><hr class="header__divide-line"><nav class="header__navigation flex"><div class="header-burger"></div><div class="header__nav nav flex"><button class="nav__burger"></button><button class="nav__link nav__link_color">Подразделы</button><a class="nav__link" href="">О нас</a><a class="nav__link" href="">Мероприятия</a><a class="nav__link" href="">Скидки</a><a class="nav__link" href="">Блог</a><a class="nav__link" href="">Доставка и оплата</a><a class="nav__link" href="">Контакты</a></div><div class="header__socials flex"> <a href=""> <svg class="header__icon_mini header__icon_soc"><use xlink:href="assets/icons/sprite.svg#facebook"></use></svg></a><a href=""> <svg class="header__icon_mini header__icon_soc"><use xlink:href="assets/icons/sprite.svg#instagram"></use></svg></a><p class="header__language">RU<svg class="header__icon_lang"><use xlink:href="assets/icons/sprite.svg#arrow-down"></use></svg></p></div></nav></div></header><div class="modal-subsection"><div class="modal-subsection__column"><a class="modal-subsection__link modal-subsection__link_title" href="">Книги</a><a class="modal-subsection__link" href="">Художественная литература</a><a class="modal-subsection__link" href="">Саморазвитие</a><a class="modal-subsection__link" href="">Психология</a><a class="modal-subsection__link" href="">Философия</a><a class="modal-subsection__link" href="">Здоровье</a><a class="modal-subsection__link" href="">Книги для детей</a><ul class="modal-subsection__link_un-list"> <li class="modal-subsection__link_list-item"> <a class="modal-subsection__link_mini" href="">для 0 - 3 лет</a></li><li class="modal-subsection__link_list-item"> <a class="modal-subsection__link_mini" href="">для 3 - 7 лет</a></li><li class="modal-subsection__link_list-item"> <a class="modal-subsection__link_mini" href="">для 7 - 10 лет</a></li></ul><a class="modal-subsection__link" href="">Книги для подростков</a><a class="modal-subsection__link" href="">Эксклюзивные издания</a></div><div class="modal-subsection__column"><a class="modal-subsection__link_title modal-subsection__link" href="">Игры</a><a class="modal-subsection__link" href="">Детские</a><a class="modal-subsection__link" href="">Взрослые</a><a class="modal-subsection__link_title modal-subsection__link" href="">Канцеляркие товары</a><a class="modal-subsection__link" href="">Блокноты</a><a class="modal-subsection__link" href="">Тетради</a><a class="modal-subsection__link" href="">Планеры и трекеры</a><a class="modal-subsection__link" href="">Ручки</a><a class="modal-subsection__link" href="">Карандаши и фломастеры</a><a class="modal-subsection__link_title modal-subsection__link" href="">Сертификаты</a><a class="modal-subsection__link_title modal-subsection__link" href="">Подарочные наборы</a></div><div class="modal-subsection__column"><a class="modal-subsection__link_title modal-subsection__link" href="">Упаковка</a><a class="modal-subsection__link" href="">Упаковочная бумага</a><a class="modal-subsection__link" href="">Коробки</a><a class="modal-subsection__link" href="">Ленты</a><a class="modal-subsection__link" href="">Конверты</a><a class="modal-subsection__link" href="">Открытки</a><a class="modal-subsection__link" href="">Пакеты</a><a class="modal-subsection__link" href="">Подарочный декор</a></div></div><section class="go-to-catalog"> <div class="inner"><div class="swiper go-to-catalog_swiper"><div class="swiper-wrapper"><div class="swiper-slide"><img class="go-to-catalog__image_swiper" src="assets/images/go-to-catalog-1.jpg" alt=""></div><div class="swiper-slide"><img class="go-to-catalog__image_swiper" src="assets/images/go-to-catalog-2.jpg" alt=""></div><div class="swiper-slide"><img class="go-to-catalog__image_swiper" src="assets/images/go-to-catalog-3.jpg" alt=""></div></div><div class="swiper-button-prev swiper-button-without-border"></div>
-<div class="swiper-button-next swiper-button-without-border"></div></div><div class="go-to-catalog__info-line"> <div class="go-to-catalog__info-line-item"><div class="go-to-catalog__info-line-number">1</div><div class="go-to-catalog__info-line-text">Консультация книжного сомелье</div></div><div class="go-to-catalog__info-line-item"><div class="go-to-catalog__info-line-number">2</div><div class="go-to-catalog__info-line-text">Доставка 1-2 дня</div></div><div class="go-to-catalog__info-line-item"><div class="go-to-catalog__info-line-number">3</div><div class="go-to-catalog__info-line-text">Уникальные подборки книг</div></div><div class="go-to-catalog__info-line-item"><div class="go-to-catalog__info-line-number">4</div><div class="go-to-catalog__info-line-text">Эстетическая упаковка</div></div></div></div><div class="go-to-catalog__button"><a class="go-to-catalog__link" href="">ПЕРЕЙТИ В КАТАЛОГ<svg><use xlink:href="assets/icons/sprite.svg#arrow-right"></use></svg></a></div></section><section class="about-company"><div class="inner"><div class="about-company__logo-name">BOOKVILLE</div><h1 class="section-title">О нашей компании</h1><div class="swiper about-company__text_swiper"><div class="swiper-wrapper"><div class="swiper-slide about-company__text-item_swiper">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.</div><div class="swiper-slide about-company__text-item_swiper">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.</div><div class="swiper-slide about-company__text-item_swiper">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.</div></div><div class="swiper-pagination"></div></div><div class="about-company__text visible"><div class="about-company__text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.</div><div class="about-company__text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.</div></div></div></section><section class="popular-goods"><div class="inner"> <h1 class="section-title">Популярные товары</h1><div class="swiper popular-goods-swiper">
+.aboutUs__letter {
+  font-weight: normal;
+  font-size: 144px;
+  line-height: 176px;
+  color: #000000;
+  float: left;
+  margin-right: 43px;
+  margin-top: 67px; }
+  @media (max-width: 767px) {
+    .aboutUs__letter {
+      margin-top: 0px; } }
+  @media (max-width: 575px) {
+    .aboutUs__letter {
+      font-size: 64px;
+      line-height: 78px; } }
+
+.aboutUs__image_right {
+  float: right;
+  width: 446px;
+  height: 446px;
+  object-fit: cover; }
+  @media (max-width: 991px) {
+    .aboutUs__image_right {
+      width: 346px;
+      height: 346px; } }
+  @media (max-width: 767px) {
+    .aboutUs__image_right {
+      max-width: 346px;
+      width: 100%;
+      height: auto;
+      float: none;
+      display: block; } }
+
+.aboutUs__pages-text_between {
+  margin-top: 67px; }
+  @media (max-width: 767px) {
+    .aboutUs__pages-text_between {
+      margin-top: 0px; } }
+
+.pages-text__paragraph_center {
+  text-align: center;
+  margin: 18px 0; }
+
+.aboutUs__images {
+  margin: 32px 0 27px 0; }
+
+.aboutUs__image {
+  width: calc((100% - 11px) / 2);
+  object-fit: cover; }
+  @media (max-width: 767px) {
+    .aboutUs__image {
+      margin-bottom: 13px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      height: auto; }
+      .aboutUs__image:last-of-type {
+        margin-bottom: 0px; } }
+  @media (max-width: 575px) {
+    .aboutUs__image {
+      width: 100%; } }
+
+.events__images {
+  float: right;
+  display: flex;
+  margin-left: 25px; }
+  @media (max-width: 1199px) {
+    .events__images {
+      float: none;
+      margin-left: 0;
+      justify-content: center;
+      margin-bottom: 20px; } }
+
+.events__image {
+  margin-right: 14px;
+  width: 312px;
+  height: 312px;
+  object-fit: cover; }
+  .events__image:last-of-type {
+    margin-right: 0px; }
+  @media (max-width: 375px) {
+    .events__image {
+      width: 100%;
+      height: auto;
+      max-height: 186px; } }
+
+.events__images_bottom {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 767px) {
+    .events__images_bottom {
+      margin-bottom: 20px; } }
+
+</style></head><body> <header class="header"> <div class="inner"><div class="header__top-navigation_mini flex"><div class="header__favorites header__favorites_left"><div class="header-burger"></div><button class="header__favorites-item"><svg class="header__icon header__icon_loupe"><use xlink:href="assets/icons/sprite.svg#loupe"></use></svg></button></div><a class="logo-block" href=""> <img class="logo" src="assets/images/logo.png" alt=""></a><div class="header__favorites"><a class="header__favorites-item header__favorites-item_like" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></a><a class="header__favorites-item header__favorites-item_cart" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg></a></div></div><div class="header__top-navigation flex"><div class="phone-number"><svg class="header__icon_mini"><use xlink:href="assets/icons/sprite.svg#phone"></use></svg><a class="phone" href="tel:+79991400000">+7 999 140 00 00</a></div><a class="logo-block" href=""> <img class="logo" src="assets/images/logo.png" alt=""></a><div class="header__favorites"><button class="header__favorites-item"><svg class="header__icon header__icon_loupe"><use xlink:href="assets/icons/sprite.svg#loupe"></use></svg></button><a class="header__favorites-item header__favorites-item_like" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></a><a class="header__favorites-item header__favorites-item_cart" href=""><svg class="header__icon"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg></a></div></div><hr class="header__divide-line"><nav class="header__navigation flex"><div class="header-burger"></div><div class="header__nav nav flex"><button class="nav__burger"></button><button class="nav__link nav__link_color">Подразделы</button><a class="nav__link" href="./aboutUs.html">О нас</a><a class="nav__link" href="events.html">Мероприятия</a><a class="nav__link" href="">Скидки</a><a class="nav__link" href="">Блог</a><a class="nav__link" href="">Доставка и оплата</a><a class="nav__link" href="">Контакты</a></div><div class="header__socials flex"> <a href=""> <svg class="header__icon_mini header__icon_soc"><use xlink:href="assets/icons/sprite.svg#facebook"></use></svg></a><a href=""> <svg class="header__icon_mini header__icon_soc"><use xlink:href="assets/icons/sprite.svg#instagram"></use></svg></a><p class="header__language">RU<svg class="header__icon_lang"><use xlink:href="assets/icons/sprite.svg#arrow-down"></use></svg></p></div></nav></div></header><div class="modal-subsection"><div class="modal-subsection__column"><a class="modal-subsection__link modal-subsection__link_title" href="">Книги</a><a class="modal-subsection__link" href="">Художественная литература</a><a class="modal-subsection__link" href="">Саморазвитие</a><a class="modal-subsection__link" href="">Психология</a><a class="modal-subsection__link" href="">Философия</a><a class="modal-subsection__link" href="">Здоровье</a><a class="modal-subsection__link" href="">Книги для детей</a><ul class="modal-subsection__link_un-list"> <li class="modal-subsection__link_list-item"> <a class="modal-subsection__link_mini" href="">для 0 - 3 лет</a></li><li class="modal-subsection__link_list-item"> <a class="modal-subsection__link_mini" href="">для 3 - 7 лет</a></li><li class="modal-subsection__link_list-item"> <a class="modal-subsection__link_mini" href="">для 7 - 10 лет</a></li></ul><a class="modal-subsection__link" href="">Книги для подростков</a><a class="modal-subsection__link" href="">Эксклюзивные издания</a></div><div class="modal-subsection__column"><a class="modal-subsection__link_title modal-subsection__link" href="">Игры</a><a class="modal-subsection__link" href="">Детские</a><a class="modal-subsection__link" href="">Взрослые</a><a class="modal-subsection__link_title modal-subsection__link" href="">Канцеляркие товары</a><a class="modal-subsection__link" href="">Блокноты</a><a class="modal-subsection__link" href="">Тетради</a><a class="modal-subsection__link" href="">Планеры и трекеры</a><a class="modal-subsection__link" href="">Ручки</a><a class="modal-subsection__link" href="">Карандаши и фломастеры</a><a class="modal-subsection__link_title modal-subsection__link" href="">Сертификаты</a><a class="modal-subsection__link_title modal-subsection__link" href="">Подарочные наборы</a></div><div class="modal-subsection__column"><a class="modal-subsection__link_title modal-subsection__link" href="">Упаковка</a><a class="modal-subsection__link" href="">Упаковочная бумага</a><a class="modal-subsection__link" href="">Коробки</a><a class="modal-subsection__link" href="">Ленты</a><a class="modal-subsection__link" href="">Конверты</a><a class="modal-subsection__link" href="">Открытки</a><a class="modal-subsection__link" href="">Пакеты</a><a class="modal-subsection__link" href="">Подарочный декор</a></div></div><section class="go-to-catalog" id="go-to-catalog"> <div class="inner"><div class="swiper go-to-catalog_swiper"><div class="swiper-wrapper"><div class="swiper-slide"><img class="go-to-catalog__image_swiper" src="assets/images/go-to-catalog-1.jpg" alt=""></div><div class="swiper-slide"><img class="go-to-catalog__image_swiper" src="assets/images/go-to-catalog-2.jpg" alt=""></div><div class="swiper-slide"><img class="go-to-catalog__image_swiper" src="assets/images/go-to-catalog-3.jpg" alt=""></div></div><div class="swiper-button-prev swiper-button-without-border"></div>
+<div class="swiper-button-next swiper-button-without-border"></div></div><div class="go-to-catalog__info-line"> <div class="go-to-catalog__info-line-item"><div class="go-to-catalog__info-line-number">1</div><div class="go-to-catalog__info-line-text">Консультация книжного сомелье</div></div><div class="go-to-catalog__info-line-item"><div class="go-to-catalog__info-line-number">2</div><div class="go-to-catalog__info-line-text">Доставка 1-2 дня</div></div><div class="go-to-catalog__info-line-item"><div class="go-to-catalog__info-line-number">3</div><div class="go-to-catalog__info-line-text">Уникальные подборки книг</div></div><div class="go-to-catalog__info-line-item"><div class="go-to-catalog__info-line-number">4</div><div class="go-to-catalog__info-line-text">Эстетическая упаковка</div></div></div></div><div class="go-to-catalog__button"><a class="go-to-catalog__link" href="">ПЕРЕЙТИ В КАТАЛОГ<svg><use xlink:href="assets/icons/sprite.svg#arrow-right"></use></svg></a></div></section><section class="about-company" id="about-company"><div class="inner"><div class="about-company__logo-name">BOOKVILLE</div><h1 class="section-title">О нашей компании</h1><div class="swiper about-company__text_swiper"><div class="swiper-wrapper"><div class="swiper-slide about-company__text-item_swiper">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.</div><div class="swiper-slide about-company__text-item_swiper">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.</div><div class="swiper-slide about-company__text-item_swiper">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.</div></div><div class="swiper-pagination"></div></div><div class="about-company__text visible"><div class="about-company__text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.</div><div class="about-company__text-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  incididunt ut laboret.</div></div></div></section><section class="popular-goods" id="popular-goods"><div class="inner"> <h1 class="section-title">Популярные товары</h1><div class="swiper popular-goods-swiper">
 <div class="swiper-wrapper">
 <!-- Slides -->
 <div class="swiper-slide"><div class="book-card"> <div class="book-card__image-block"> <img class="book-card__image" src="assets/images/book-card-img-1.jpg" alt=""></div><div class="book-card__author">Ольга Примаченко</div><div class="book-card__title">К себе нежно</div><div class="book-card__price">790 ₽</div><div class="book-card__like"><svg class="book-card__like-icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></div><svg class="book-card__cart"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg></div></div>
@@ -902,7 +1057,7 @@ footer {
 <div class="swiper-slide"><div class="book-card"> <div class="book-card__image-block"> <img class="book-card__image" src="assets/images/book-card-img-1.jpg" alt=""></div><div class="book-card__author">Ольга Примаченко</div><div class="book-card__title">К себе нежно</div><div class="book-card__price">790 ₽</div><div class="book-card__like"> <svg class="book-card__like-icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></div><svg class="book-card__cart"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg></div></div>
 </div>
 <div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div></div></section><section class="sales"><div class="inner"> <h1 class="section-title">Скидки</h1><div class="swiper sales-swiper">
+<div class="swiper-button-next"></div></div></section><section class="sales" id="sales"><div class="inner"> <h1 class="section-title">Скидки</h1><div class="swiper sales-swiper">
 <div class="swiper-wrapper">
 <!-- Slides -->
 <div class="swiper-slide"><div class="book-card"> <div class="book-card__image-block"> <img class="book-card__image" src="assets/images/book-card-img-1.jpg" alt=""></div><div class="book-card__author">Ольга Примаченко</div><div class="book-card__title">К себе нежно</div><div class="book-card__price">790 ₽</div><div class="book-card__like"><svg class="book-card__like-icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></div><svg class="book-card__cart"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg><div class="book-card__sale">5%</div></div></div>
@@ -914,7 +1069,7 @@ footer {
 <div class="swiper-slide"><div class="book-card"> <div class="book-card__image-block"> <img class="book-card__image" src="assets/images/book-card-img-1.jpg" alt=""></div><div class="book-card__author">Ольга Примаченко</div><div class="book-card__title">К себе нежно</div><div class="book-card__price">790 ₽</div><div class="book-card__like"> <svg class="book-card__like-icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></div><svg class="book-card__cart"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg><div class="book-card__sale">5%</div></div></div>
 </div>
 <div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div></div></section><section class="recomends"><div class="inner"> <h1 class="section-title">BOOKVILLE рекомендует</h1><div class="swiper recomends-swiper">
+<div class="swiper-button-next"></div></div></section><section class="recomends" id="recomends"><div class="inner"> <h1 class="section-title">BOOKVILLE рекомендует</h1><div class="swiper recomends-swiper">
 <div class="swiper-wrapper">
 <!-- Slides -->
 <div class="swiper-slide"><div class="book-card"> <div class="book-card__image-block"> <img class="book-card__image" src="assets/images/book-card-img-1.jpg" alt=""></div><div class="book-card__author">Ольга Примаченко</div><div class="book-card__title">К себе нежно</div><div class="book-card__price">790 ₽</div><div class="book-card__like"><svg class="book-card__like-icon"><use xlink:href="assets/icons/sprite.svg#heart"></use></svg></div><svg class="book-card__cart"><use xlink:href="assets/icons/sprite.svg#cart"></use></svg></div></div>
